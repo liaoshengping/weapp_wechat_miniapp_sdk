@@ -13,6 +13,9 @@ class ApiUrl{
 	const SESSION_KEY = 'https://api.weixin.qq.com/sns/jscode2session';
 	const ACCESS_TOKEN = 'https://api.weixin.qq.com/cgi-bin/token';
 
+	//get userinfo
+    const GET_USER_INFO='https://api.weixin.qq.com/cgi-bin/user/info';
+
 	//get template from library
 	const TEMPLATE_MSG_LIST_FORM_LIB = 'https://api.weixin.qq.com/cgi-bin/wxopen/template/library/list';
 	const TEMPLATE_MSG_GET_FORM_LIB = 'https://api.weixin.qq.com/cgi-bin/wxopen/template/library/get';

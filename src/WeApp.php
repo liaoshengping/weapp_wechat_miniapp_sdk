@@ -15,6 +15,7 @@ use JiaweiXS\WeApp\Api\SessionKey;
 use JiaweiXS\WeApp\Api\Statistic;
 use JiaweiXS\WeApp\Api\TemplateMsg;
 use JiaweiXS\SimpleCache;
+use JiaweiXS\WeApp\Api\User;
 
 class WeApp
 {
@@ -79,5 +80,14 @@ class WeApp
 		}
 		return $this->instance['custommsg'];
 	}
+	/*
+	 *  获取用户信息
+	 */
+	public function getUser(){
+        if(!isset($this->instance['users'])){
+            $this->instance['users'] = new User($this->appid,$this->secret);
+        }
+        return $this->instance['users'];
+    }
 
 }
