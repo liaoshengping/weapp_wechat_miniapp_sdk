@@ -81,7 +81,7 @@ class WeApp
 		return $this->instance['custommsg'];
 	}
 	/*
-	 *  获取用户信息
+	 *  获取用户信息23232323232323
 	 */
 	public function getUser(){
         if(!isset($this->instance['users'])){
